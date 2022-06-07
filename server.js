@@ -1372,6 +1372,10 @@ let agents = [
   }
 ]
 
+app.get('/', (req, res) =>{
+    res.send('index.html')
+})
+
 app.get('/api/agents', (req, res) => {
   res.json(agents)
 })
