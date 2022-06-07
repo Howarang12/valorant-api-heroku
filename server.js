@@ -1373,7 +1373,7 @@ let agents = [
 ]
 
 app.get('/', (req, res) =>{
-    res.send('index.html')
+    res.sendFile('index.html')
 })
 
 app.get('/api/agents', (req, res) => {
